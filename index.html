@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CellaLonga — Privacy &amp; Support</title>
+<style>
+  :root {
+    --bg: #0C100E;
+    --surface: #171C1A;
+    --surface2: #1F2523;
+    --ink: #F3F5F4;
+    --ink-secondary: #A9B3B0;
+    --ink-tertiary: #6E7876;
+    --jade: #3FA88C;
+    --violet: #7C6CE0;
+    --hairline: rgba(255,255,255,0.08);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: radial-gradient(circle at 50% -10%, #17231F 0%, var(--bg) 55%);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 80px; }
+  header { text-align: center; margin-bottom: 48px; }
+  header img {
+    width: 96px; height: 96px; border-radius: 22px;
+    box-shadow: 0 8px 30px rgba(63,168,140,0.25);
+    margin-bottom: 18px;
+  }
+  h1 { font-size: 28px; margin: 0 0 8px; letter-spacing: -0.01em; }
+  .tagline { color: var(--ink-secondary); font-size: 16px; margin: 0; }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--hairline);
+    border-radius: 18px;
+    padding: 28px 28px;
+    margin-bottom: 20px;
+  }
+  .card h2 {
+    font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--jade); margin: 0 0 14px;
+  }
+  .card p, .card li { color: var(--ink-secondary); font-size: 15px; }
+  .card a { color: var(--jade); text-decoration: none; }
+  .card a:hover { text-decoration: underline; }
+  ul { padding-left: 20px; margin: 8px 0; }
+  li { margin-bottom: 6px; }
+  .pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+  .pill {
+    display: inline-block; padding: 6px 12px; border-radius: 999px;
+    background: var(--surface2); color: var(--ink-secondary);
+    font-size: 12.5px; border: 1px solid var(--hairline);
+  }
+  .updated { color: var(--ink-tertiary); font-size: 13px; margin-top: -4px; margin-bottom: 18px; }
+  footer {
+    text-align: center; color: var(--ink-tertiary); font-size: 13px;
+    margin-top: 40px;
+  }
+  footer a { color: var(--ink-tertiary); }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="images/appicon.png" alt="CellaLonga app icon">
+      <h1>CellaLonga</h1>
+      <p class="tagline">Fasting isn't a diet. It's your longevity lever — measured honestly, owned for life.</p>
+    </header>
+
+    <div class="card">
+      <h2>Support</h2>
+      <p>Questions, feedback, or a bug to report — we read every email.</p>
+      <p><a href="mailto:mythadubiz@gmail.com">mythadubiz@gmail.com</a></p>
+    </div>
+
+    <div class="card">
+      <h2>Privacy Policy</h2>
+      <p class="updated">Last updated: August 9, 2026</p>
+
+      <p><strong>CellaLonga has no backend and no user account.</strong> There is nothing to sign up
+      for, and nothing about you is ever transmitted to us or to any third party.</p>
+
+      <p>What stays on your iPhone, always:</p>
+      <ul>
+        <li>Every fast you start or complete, every feeling you log, and every manual measurement
+          (weight, glucose, ketones) — stored locally on your device (Apple's SwiftData), never
+          uploaded anywhere.</li>
+        <li>If you choose to connect Apple Health (entirely optional — the app works fully without
+          it), CellaLonga only <em>reads</em> sleep, heart rate variability, weight and glucose to
+          enrich your metabolic timeline and your personal correlations. It never writes to Health,
+          and that data never leaves your device either.</li>
+      </ul>
+
+      <p>What we don't have:</p>
+      <ul>
+        <li>No analytics SDK, no crash reporter, no advertising identifier, no tracking of any kind.</li>
+        <li>No account, no login, no email collection beyond what you choose to send us directly.</li>
+      </ul>
+
+      <p>In-app purchase: the one-time "Nerd Mode" unlock is processed entirely by Apple through
+      StoreKit. We never see your payment details — Apple's own
+      <a href="https://www.apple.com/legal/privacy/">privacy policy</a> covers that transaction.</p>
+
+      <p>CellaLonga is not directed at children and is not designed to collect data from anyone,
+      of any age — there is simply no collection mechanism in the app.</p>
+
+      <p>Because nothing is collected or transmitted, there is no server-side data to access,
+      export, or delete on request — everything already lives only on your device, under your
+      control. Deleting the app deletes everything.</p>
+
+      <div class="pill-row">
+        <span class="pill">Zero backend</span>
+        <span class="pill">No account</span>
+        <span class="pill">No analytics</span>
+        <span class="pill">HealthKit read-only, optional</span>
+        <span class="pill">On-device only</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Medical Disclaimer</h2>
+      <p>CellaLonga is informational only and is not medical advice. It does not diagnose, treat,
+      or prevent any condition. Consult a clinician before attempting extended fasts, especially if
+      you take medication or have a medical condition.</p>
+    </div>
+
+    <footer>
+      © 2026 Mythadubiz · <a href="mailto:mythadubiz@gmail.com">mythadubiz@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
